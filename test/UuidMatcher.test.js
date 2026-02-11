@@ -1,5 +1,5 @@
-import { randomUuid, UuidMatcher } from "../build/index.js";
 import { tagLiterals } from "@rsc-utils/template-literal-utils";
+import { randomUuid, UuidMatcher } from "../build/index.js";
 
 describe("uuid", () => {
 	describe("UuidMatcher", () => {
