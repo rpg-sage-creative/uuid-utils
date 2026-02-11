@@ -1,6 +1,6 @@
 # rpg-sage-creative/uuid-utils
-This repo is a utils collection for RSC projects.
-It's purpose is simply to provide reusable code.
+
+This repo contains logic for creating, detecting, testing, typeguarding, and parsing uuids.
 
 ## Node
 
