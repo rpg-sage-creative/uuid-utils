@@ -8,15 +8,15 @@ describe("uuid", () => {
 
 		/** [ [input, output], ... ] */
 		const tests = [
-			[uuid, uuid],
-			[`{"id":"${uuid}"}`, uuid],
-			["1234567890123456", undefined],
-			["control", undefined],
+			{ input:uuid, expected:uuid },
+			{ input:`{"id":"${uuid}"}`, expected:uuid },
+			{ input:"1234567890123456", expected:undefined },
+			{ input:"control", expected:undefined },
 		];
 
-		tests.forEach(([input, output]) => {
-			test(tagLiterals`parseUuid(${input}) === ${output}`, () => {
-				expect(parseUuid(input)).toBe(output);
+		tests.forEach(({ input, expected }) => {
+			test(tagLiterals`parseUuid(${input}) === ${expected}`, () => {
+				expect(parseUuid(input)).toBe(expected);
 			});
 		})
 	});

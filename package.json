@@ -45,6 +45,7 @@
 		"typescript": "^5.9.3"
 	},
 	"dependencies": {
-		"@rsc-utils/type-utils": "github:rpg-sage-creative/type-utils#semver:^1.1.0"
+		"@rsc-utils/type-utils": "github:rpg-sage-creative/type-utils#semver:^1.1.0",
+		"uuid": "^13.0.0"
 	}
 }

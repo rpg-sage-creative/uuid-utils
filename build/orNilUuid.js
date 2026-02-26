@@ -1,5 +1,5 @@
-import { isUuid } from "./isUuid.js";
+import { validate } from "uuid";
 import { NIL_UUID } from "./types.js";
 export function orNilUuid(value) {
-    return isUuid(value) ? value.toLowerCase() : NIL_UUID;
+    return validate(value) ? value.toLowerCase() : NIL_UUID;
 }

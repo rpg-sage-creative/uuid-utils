@@ -1,3 +1,4 @@
+export * from "./isMaxUuid.js";
 export * from "./isNilUuid.js";
 export * from "./isNonNillUuid.js";
 export * from "./isUuid.js";

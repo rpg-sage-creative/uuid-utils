@@ -9,15 +9,15 @@ describe("uuid", () => {
 
 		/** [ [input, output], ... ] */
 		const tests = [
-			[uuid, true],
-			["control", false],
-			[matcher, true],
-			[null, false],
+			{ input:uuid, expected:true },
+			{ input:"control", expected:false },
+			{ input:matcher, expected:true },
+			{ input:null, expected:false },
 		];
 
-		tests.forEach(([input, output]) => {
-			test(tagLiterals`matcher.matches(${input}) === ${output}`, () => {
-				expect(matcher.matches(input)).toBe(output);
+		tests.forEach(({ input, expected }) => {
+			test(tagLiterals`matcher.matches(${input}) === ${expected}`, () => {
+				expect(matcher.matches(input)).toBe(expected);
 			});
 		});
 	});

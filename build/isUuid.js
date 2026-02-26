@@ -1,6 +1,4 @@
-import { parseUuid } from "./parseUuid.js";
+import { validate } from "uuid";
 export function isUuid(value) {
-    if (!value)
-        return false;
-    return parseUuid(value) === value;
+    return validate(value);
 }

@@ -1,4 +1,4 @@
-import { NIL_UUID } from "./types.js";
+import { NIL } from "uuid";
 export function isNilUuid(value) {
-    return value === NIL_UUID;
+    return value === NIL;
 }

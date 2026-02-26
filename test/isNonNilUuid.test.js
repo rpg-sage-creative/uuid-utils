@@ -5,7 +5,7 @@ import { getTests } from "./getTests.mjs";
 describe("isNonNilUuid", () => {
 	const { uuid, tests } = getTests("isNonNilUuid");
 
-	tests.forEach(([input, isUuidResult, isNilUuidResult, isNonNilUuidResult, orNilUuidResult]) => {
+	tests.forEach(({ input, isUuidResult, isNilUuidResult, isMaxUuidResult, isNonNilUuidResult, orNilUuidResult }) => {
 		test(tagLiterals`isNonNilUuid(${input}) === ${isNonNilUuidResult}`, () => {
 			expect(isNonNilUuid(input)).toBe(isNonNilUuidResult);
 		});
