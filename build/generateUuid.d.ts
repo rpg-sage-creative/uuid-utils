@@ -8,7 +8,9 @@ type UuidArgs = {
 /**
  * A convenience method for uuid.v7().
  * Why? ... Sometimes I am lazy and only want one import in my file.
- * This way I can import { isUuid, randomUuid } from "@rsc-utils/core-utils" instead of needing to also import from uuid.
+ * This way I can import { isUuid, generateUuid } from "@rsc-utils/core-utils" instead of needing to also import from uuid.
 */
-export declare function randomUuid(args?: UuidArgs): STRICT_UUID;
+export declare function generateUuid(args?: UuidArgs): STRICT_UUID;
+/** @deprecate use generateUuid() */
+export declare const randomUuid: typeof generateUuid;
 export {};

@@ -1,10 +1,10 @@
 import { tagLiterals } from "@rsc-utils/template-literal-utils";
-import { randomUuid, UuidMatcher } from "../build/index.js";
+import { generateUuid, UuidMatcher } from "../build/index.js";
 
 describe("uuid", () => {
 	describe("UuidMatcher", () => {
 
-		const uuid = randomUuid();
+		const uuid = generateUuid();
 		const matcher = new UuidMatcher(uuid);
 
 		/** [ [input, output], ... ] */

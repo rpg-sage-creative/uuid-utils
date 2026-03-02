@@ -1,6 +1,6 @@
-import { NIL_UUID, MAX_UUID, randomUuid } from "../build/index.js";
+import { NIL_UUID, MAX_UUID, generateUuid } from "../build/index.js";
 
-const uuid = randomUuid();
+const uuid = generateUuid();
 
 /** [ [input, isUuidResult, isNilUuidResult, isNonNilUuidResult, orNilUuidResult], ... ]  */
 const tests = [
