@@ -11,6 +11,6 @@ type UuidArgs = {
  * This way I can import { isUuid, generateUuid } from "@rsc-utils/core-utils" instead of needing to also import from uuid.
 */
 export declare function generateUuid(args?: UuidArgs): STRICT_UUID;
-/** @deprecate use generateUuid() */
+/** @deprecated use generateUuid() */
 export declare const randomUuid: typeof generateUuid;
 export {};

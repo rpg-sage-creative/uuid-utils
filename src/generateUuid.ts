@@ -19,5 +19,5 @@ export function generateUuid(args?: UuidArgs): STRICT_UUID {
 	return v7({ msecs, seq }) as STRICT_UUID;
 }
 
-/** @deprecate use generateUuid() */
+/** @deprecated use generateUuid() */
 export const randomUuid = generateUuid;
