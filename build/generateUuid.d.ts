@@ -1,9 +1,9 @@
 import type { STRICT_UUID } from "./types.js";
 type UuidArgs = {
     /** sequence number for generating mulitple UUID values for a specific timestamp */
-    seq?: number;
+    seq?: bigint | number;
     /** the timestamp to use as the date portion of the UUID */
-    ts?: Date | number;
+    ts?: bigint | Date | number;
 };
 /**
  * A convenience method for uuid.v7().
